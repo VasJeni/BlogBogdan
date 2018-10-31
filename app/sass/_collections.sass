@@ -1,0 +1,42 @@
+.collection
+  & + .collection
+    margin-top: 74px
+  &__gallery
+    padding-top: 26px
+    &-item
+      display: block
+      width: 100%
+      height: 100%
+      margin-bottom: 25px
+      img
+        display: block
+        max-width: 100%
+        height: auto
+        margin: 0 auto
+  &__title
+    font-size: 45px
+    color: #000
+  &__description
+    margin-top: 46px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    &-link
+      font-size: 25px
+      color: #010101
+      position: relative
+      margin-left: 7px
+      text-decoration: none
+      &:before
+        content: ''
+        position: absolute
+        bottom: -5px
+        left: -7px
+        width: calc(100% + 14px)
+        height: 18px
+        background: $accent
+        z-index: -1
+        transition: .2s ease-in-out
+    &__text
+      line-height: 1.2
+      margin: 0
