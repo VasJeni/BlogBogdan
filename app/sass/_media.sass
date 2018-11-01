@@ -1,31 +1,166 @@
 @import "vars"
 
 
-/*==========  Desktop First  ==========*/
+@media (max-width: 1440px)
+  //Shared
+  main
+    padding: 111px 0
+  body
+    font-size: 22px
+  .header
+    padding: 20px 35px
+    &__nav
+      &-list
+        right: -35px
+        top: -40px
+        a
+          font-size: 43px
+      &-toggle
+        span
+          width: 48px
+          height: 5px
+          margin-bottom: 8px
+        input
+          width: 58px
+          height: 44px
+          &:checked~span
+            transform: rotate(45deg) translate(5px,-6px)
+          &:checked~span:nth-last-child(2)
+            transform: rotate(-45deg) translate(4px,8px)
+    &__logo
+      width: 125px
+      height: auto
 
-// ≥1200px
-+media-breakpoint-down(lg)
+  .title
+    font-size: 160px
+    margin-bottom: 43px
+  .subtitle
+    font-size: 32px
+  .footer
+    padding: 40px 30px 90px
+    &__social
+      padding-top: 25px
+      margin-bottom: 25px
+      &-wrap
+        order: 2
+      &-btn
+        width: auto
+        height: 35px
+        display: inline-block
+        img
+          height: 100%
+    &__contacts p
+      font-size: 18px
 
-// ≥992px
-+media-breakpoint-down(md)
+  //Collections
+  .collection
+    &__title
+      font-size: 35px
+    &__description
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      &-link
+        font-size: 22px
+        order: 1
 
-// ≥768px
-+media-breakpoint-down(sm)
+@media (max-width: 1325px)
+  // About
+  .about
+    &__content
+      p
+        font-size: 18px
 
-// ≥576px
-+media-breakpoint-down(xs)
+@media (max-width: 1200px)
+  // About
+  .about
+    &__content
+      p
+        font-size: 16px
+
+@media (max-width: 1100px)
+  // About
+  .about
+    &__content
+      p
+        font-size: 14px
+
+@media (max-width: 992px)
+  //Shared
+  body
+    font-size: 18px
+  .title
+    font-size: 120px
+    margin-bottom: 24px
+  .subtitle
+    font-size: 24px
+
+  //Collections
+  .collection
+    &__title
+      font-size: 28px
+    &__description-link
+      font-size: 18px
+
+  //About
+  .about
+    &__photo--img
+      justify-content: center
+      margin-bottom: 30px
+      img
+        max-width: 500px
+    &__content-wrap
+      order: 1
 
 
-/*==========  Mobile First  ==========*/
+@media (max-width: 768px)
+  //Shared
+  ._mb-30
+    margin-bottom: 30px
 
-// ≤576px
-+media-breakpoint-up(sm)
+@media (max-width: 700px)
+  //Shared
+  br
+    display: none
+  .subtitle
+    letter-spacing: normal
+  .title
+    font-size: 100px
+    margin-bottom: 14px
 
-// ≤768px
-+media-breakpoint-up(md)
+@media (max-width: 576px)
+  //Shared
+  .header__nav-list
+    width: 100vw
+    a
+      font-size: 33px
+  ._mb-sm-30, ._mb-30
+    margin-bottom: 15px
+  .footer
+    &__form-row
+      flex-direction: column
+    &__form-field-wrap
+      width: 100%
+      margin-bottom: 10px
+    &__contacts p
+      font-size: 16px
+    &__copyright
+      font-size: 12px
+    &__form-btn
+      bottom: -30px
+    &__social
+      padding-top: 55px
+  .footer__form-row + .footer__form-row
+    margin-top: 0
+  .title
+    font-size: 55px
+    margin-bottom: 0
 
-// ≤992px
-+media-breakpoint-up(lg)
-
-// ≤1200px
-+media-breakpoint-up(xl)
+  //Collections
+  .collection__title
+    font-size: 22px
+  .collections
+    .subtitle
+      font-size: 20px
+      &:before
+        display: none

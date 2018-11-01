@@ -8,6 +8,11 @@
       padding-top: 8px
   &__content
     padding-top: 10px
+    flex-direction: row-reverse
+    align-content: center
+    &-wrap, .about__photo--img
+      display: flex
+      align-items: center
     p
       margin: -10px 0 0 0
       //letter-spacing: 2.2px
@@ -15,7 +20,16 @@
       font-weight: 200
       font-family: $default-font
       line-height: 30px
+  &__photo--img
+    img
+      display: block
+      width: 100%
+      height: auto
   &__collaborations
     margin: 110px 0
     &--item
       margin: 34px 0
+      img
+        display: block
+        width: 100%
+        height: auto
