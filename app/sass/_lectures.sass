@@ -1,0 +1,78 @@
+.lectures
+  &__text
+    &--title
+      margin: 27px 0
+      display: block
+    &--content
+      margin: 40px 0 90px 0
+      font-family: "Assistant"
+      font-weight: 400
+      text-align: right
+      padding: 0 20px
+      line-height: 1.2em
+  &__images
+    margin-top: 90px
+    &--description
+      text-align: right
+      display: block
+      margin-top: 25px
+      z-index: 3
+      bottom: 100%
+      right: 0
+
+.owl
+  &-prev
+    top: 50%
+    left: -35px
+    z-index: 2
+    position: absolute
+    transform: translateY(-50%)
+    span
+      font-size: 72px
+      font-weight: bold
+      &:active,
+      &:focus,
+      &:hover
+        outline: none
+  &-next
+    top: 50%
+    right: -35px
+    z-index: 2
+    position: absolute
+    transform: translateY(-50%)
+  span
+    font-size: 72px
+    font-weight: bold
+    &:active,
+    &:focus,
+    &:hover
+      outline: none
+  &-carousel
+    direction: ltr
+    margin: 0
+    overflow: hidden
+  &-nav
+    position: absolute
+    top: 50%
+    z-index: 3
+    width: 100%
+  &-dots
+    position: absolute
+    bottom: 70px
+    left: 50%
+    transform: translateX(-50%)
+    .active
+      background-color: #fff568 !important
+      color: #fff568 !important
+  &-dot
+    position: relative
+    z-index: 99999999999
+    height: 13px
+    width: 13px
+    background-color: #ffffff !important
+    margin: 0 10px
+    border-radius: 50%
+    &:active,
+    &:focus,
+    &:hover
+      outline: none
