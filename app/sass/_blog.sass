@@ -9,15 +9,15 @@
         width: 100%
         height: auto
       .subtitle:before
-         width: 100%
-         left: 0
-         bottom: 0
+        width: 100%
+        left: 0
+        bottom: -1px
       &-first:hover .blog__gallery--text
         visibility: visible
       &-second:hover .blog__gallery--text
         visibility: visible
       &-third:hover .blog__gallery--text
-        visibility: visible
+       visibility: visible
       &-four:hover .blog__gallery--text
         visibility: visible
       &-five:hover .blog__gallery--text
@@ -26,17 +26,20 @@
         visibility: visible
     &--text
       position: absolute
-      top: 50%
-      left: 50%
+      left: 15px
+      top: 0
       color: #FFFFFF
       background-color: rgba(0, 0, 0, 0.46)
       width: calc(100% - 30px)
-      height: 100%
-      padding: 0 15px
-      background-clip: padding-box
-      transform: translate(-50%, -50%)
+      height: calc(100% - 1px)
+      //transform: translateX(-50%)
       margin-top: 0
       visibility: hidden
+      z-index: 2
+      &:focus,
+      &:hover,
+      &:active
+        outline: none
       h3
         font-family: "Assistant"
         font-weight: 600
@@ -57,3 +60,15 @@
     img
       margin-left: 10px
       width: 10px
+@media only screen and (max-width: 567px)
+  .blog__gallery--text
+    h3
+      font-size: 20px
+    p
+      font-size: 16px
+@media only screen and (max-width: 320px)
+  .blog__gallery--text
+    h3
+      font-size: 16px
+    p
+      font-size: 14px

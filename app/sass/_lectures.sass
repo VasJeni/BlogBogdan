@@ -12,6 +12,8 @@
       line-height: 1.2em
   &__images
     margin-top: 90px
+    img
+      padding: 40px
     &--description
       text-align: right
       display: block
@@ -19,34 +21,35 @@
       z-index: 3
       bottom: 100%
       right: 0
+      padding-right: 40px
 
 .owl
   &-prev
-    top: 50%
-    left: -35px
+    top: 40%
+    left: 0
     z-index: 2
     position: absolute
     transform: translateY(-50%)
-    span
-      font-size: 72px
-      font-weight: bold
-      &:active,
-      &:focus,
-      &:hover
-        outline: none
-  &-next
-    top: 50%
-    right: -35px
-    z-index: 2
-    position: absolute
-    transform: translateY(-50%)
-  span
-    font-size: 72px
-    font-weight: bold
     &:active,
     &:focus,
     &:hover
       outline: none
+    span
+      font-size: 72px
+      font-weight: bold
+  &-next
+    top: 40%
+    right: 0
+    z-index: 2
+    position: absolute
+    transform: translateY(-50%)
+    &:active,
+    &:focus,
+    &:hover
+      outline: none
+    span
+      font-size: 72px
+      font-weight: bold
   &-carousel
     direction: ltr
     margin: 0
@@ -58,7 +61,7 @@
     width: 100%
   &-dots
     position: absolute
-    bottom: calc(50px + 4% )
+    bottom: calc(90px + 4% )
     left: 50%
     transform: translateX(-50%)
     .active
