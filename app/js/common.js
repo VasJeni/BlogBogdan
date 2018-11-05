@@ -4,7 +4,7 @@ $(function() {
 
 });
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".lectures__images").owlCarousel({
         items: 1,
         loop : true,
         nav : true,
@@ -16,5 +16,13 @@ $(document).ready(function(){
         loop : true,
         nav : true,
         dots : true,
+        margin : 20
+    });
+    $(".sp__carouse2").owlCarousel({
+        items: 1,
+        loop : true,
+        nav : true,
+        dots : true,
+        margin : 20
     });
 });
