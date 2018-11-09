@@ -12,8 +12,6 @@
       line-height: 1.2em
   &__images
     margin-top: 90px
-    img
-      padding: 40px
     &--description
       text-align: right
       display: block
@@ -22,61 +20,3 @@
       bottom: 100%
       right: 0
       padding-right: 40px
-
-.owl
-  &-prev
-    top: 40%
-    left: 10px
-    z-index: 2
-    position: absolute
-    transform: translateY(-50%)
-    &:active,
-    &:focus,
-    &:hover
-      outline: none
-    span
-      font-size: 72px
-      font-family: $default-font
-      font-weight: bold
-  &-next
-    top: 40%
-    right: 10px
-    z-index: 2
-    position: absolute
-    transform: translateY(-50%)
-    &:active,
-    &:focus,
-    &:hover
-      outline: none
-    span
-      font-family: $default-font
-      font-size: 72px
-      font-weight: bold
-  &-carousel
-    direction: ltr
-    margin: 0
-    overflow: hidden
-  &-nav
-    position: absolute
-    top: 50%
-    z-index: 3
-    width: 100%
-  &-dots
-    position: absolute
-    bottom: calc(90px + 4% )
-    left: 50%
-    transform: translateX(-50%)
-    .active
-      background-color: #fff568 !important
-  &-dot
-    position: relative
-    z-index: 99999999999
-    height: 13px
-    width: 13px
-    background-color: #ffffff !important
-    margin: 0 10px
-    border-radius: 50%
-    &:active,
-    &:focus,
-    &:hover
-      outline: none

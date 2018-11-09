@@ -1,0 +1,57 @@
+.owl
+  &-prev,
+  &-next
+    z-index: 2
+    position: absolute
+    transform: translateY(-50%)
+    &:active,
+    &:focus,
+    &:hover
+      outline: none
+    span
+      font-family: $default-font
+      font-size: 72px
+      font-weight: bold
+      color: transparent
+  &-prev
+    right: calc(100% + 22px)
+    span
+      background: url("../img/arrow2.png") no-repeat center center
+  &-next
+    left: calc(100% + 22px)
+    span
+      background: url("../img/arrow.png") no-repeat center center
+
+  &-carousel
+    direction: ltr
+    margin: 0
+    //overflow: hidden
+  &-nav
+    position: absolute
+    top: 50%
+    z-index: 3
+    width: 100%
+  &-dots
+    position: absolute
+    bottom: 18px
+    left: 50%
+    transform: translateX(-50%)
+    .active
+      background-color: #fff568 !important
+  &-dot
+    position: relative
+    z-index: 99999999999
+    height: 13px
+    width: 13px
+    background-color: #ffffff !important
+    margin: 0 10px
+    border-radius: 50%
+    &:active,
+    &:focus,
+    &:hover
+      outline: none
+
+@media screen and (max-width: 1570px)
+  .owl
+    &-nav
+      display: none

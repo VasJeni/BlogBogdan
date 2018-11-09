@@ -1,0 +1,9 @@
+done 1. Потрібно оновити слайдер (перевірити на всіх сторінках). Має виглядати точно, як на макеті. Це стосується його ширини - вона має бути такою, як на макеті. Ширина фотографії, відступ до стрілок і т.д. Потрібно замінити стрілки на ті, які є в макеті.
+2. Потрібно замінити іконки Фейсбука і Інстаграма на ті, які використано в макеті, теж достань їх звідти, які і стрілки.
+3. От коментарі замовника на рахунок хедера, потрібно його оновити для мобільного розширення (479px і менше) відповідно до цих коментарів - please make the menu icon (the lines) smaller. you can decrease the margin between the lines when the scren become smaller.
+
+the logo can be smaller in mobile. and add some border bottom to the header when the page is scolling more than 100px from top of the screen
+
+I add a screenshot ho it could be better for ux in mobile
+
+От приклад того, що він хоче - http://prntscr.com/lg5n4u

@@ -6,6 +6,15 @@ $(function() {
         });
     });
 
+    window.onscroll = function(){
+        if (window.pageYOffset >20){
+            $(".header").addClass("bb-2px-s");
+        }
+        if(($(".header").hasClass("bb-2px-s")) &&(window.pageYOffset <= 20)){
+            $(".header").removeClass("bb-2px-s");
+        }
+    };
+
     $(document).ready(function(){
         $(".lectures__images").owlCarousel({
             items: 1,
