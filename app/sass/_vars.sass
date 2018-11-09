@@ -9,3 +9,26 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1441px)
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px)
 
 $gutter: $grid-gutter-width
+
+
+//add yellow underline
+.yellow-underline
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 50% !important
+  transform: translateX(-50%)
+  width: 0 !important
+  height: 18px
+  background: $accent
+  z-index: -1
+  transition: .35s ease-in-out
+  @media (max-width: 1440px)
+    height: 12px
+  @media (max-width: 1024px)
+    height: 10px
+  @media (max-width: 767px)
+    height: 8px
+.yellow-underline-animations
+  width: calc(100% + 15px) !important
+  transition: width 0.2s ease-out

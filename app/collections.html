@@ -22,50 +22,49 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!--add carousel style-->
+	<link rel="stylesheet" href="libs/OwlCarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.green.min.css">
 </head>
 
 <body>
 
 	<header class="header">
-		<a href="#" class="header__logo">
-			<img src="img/logo.png" alt="Logo" class="header__logo-pic img-responsive">
-		</a>
 
-		<nav class="header__nav" role="navigation">
-			<div class="header__nav-toggle">
-				<!-- A fake / hidden checkbox is used as click reciever -->
-				<input type="checkbox" />
-				<!-- Some spans to act as a hamburger. -->
-				<span></span>
-				<span></span>
-				<span></span>
-				<ul class="header__nav-list">
-					<a href="#">
-						<li>About</li>
-					</a>
-					<a href="#">
-						<li>Interior</li>
-					</a>
-					<a href="#">
-						<li>Styling</li>
-					</a>
-					<a href="#">
-						<li>School</li>
-					</a>
-					<a href="#">
-						<li>Blog</li>
-					</a>
-					<a href="projects.html">
-						<li>Projects</li>
-					</a>
-					<a href="projects.html" class="active">
-						<li>Collections</li>
-					</a>
-					<a href="#">
-						<li>Press</li>
-					</a>
+		<nav class="navbar navbar-expand navbar-light bg-faded header__navbar">
+			<!-- Brand -->
+			<a class="navbar-brand header__logo" href="#">
+				<img src="img/logo.png" alt="Logo" class="header__logo-pic img-responsive">
+			</a>
+
+			<!-- Links -->
+			<div class="collapse navbar-collapse" id="nav-content">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							<div id="nav-icon1">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="Preview">
+							<a class="dropdown-item" href="about.html">About</a>
+							<a class="dropdown-item" href="interior.html">Interior</a>
+							<a class="dropdown-item" href="styling.html">Styling</a>
+							<a class="dropdown-item" href="school.html">School</a>
+							<a class="dropdown-item" href="blog.html">Blog</a>
+							<a class="dropdown-item" href="projects.html">Projects</a>
+							<a class="dropdown-item active">Collections</a>
+							<a class="dropdown-item" href="press.html">Press</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -109,6 +108,16 @@
 						</a>
 					</div>
 				</div>
+				<div class="row collection__carousel">
+					<div class="col-12 col-md-6">
+						<div class="owl-carousel home__carousel">
+							<img src="img/1.jpg" alt="image">
+							<img src="img/2.jpg" alt="image">
+							<img src="img/3.jpg" alt="image">
+							<img src="img/4.jpg" alt="image">
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-lg-12 collection__description">
 						<a href="#" class="collection__description-link"> לקטלוג המלא<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="17" viewBox="0 0 9 17"><defs><path id="scl3a" d="M248.06 2303.33l7.27-8.31 1.54 1.75-5.82 6.65 5.94 6.78-1.57 1.8-7.43-8.5.1-.12z"/></defs><g><g transform="translate(-248 -2295)"><use xlink:href="#scl3a"/></g></g></svg></a>
@@ -145,6 +154,16 @@
 						<a href="#" class="collection__gallery-item _mb-sm-30">
 							<img src="img/4.jpg" alt="Collection">
 						</a>
+					</div>
+				</div>
+				<div class="row collection__carousel">
+					<div class="col-12 col-md-6">
+						<div class="owl-carousel home__carousel">
+							<img src="img/1.jpg" alt="image">
+							<img src="img/2.jpg" alt="image">
+							<img src="img/3.jpg" alt="image">
+							<img src="img/4.jpg" alt="image">
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -185,6 +204,16 @@
 						</a>
 					</div>
 				</div>
+				<div class="row collection__carousel">
+					<div class="col-12 col-md-6">
+						<div class="owl-carousel home__carousel">
+							<img src="img/1.jpg" alt="image">
+							<img src="img/2.jpg" alt="image">
+							<img src="img/3.jpg" alt="image">
+							<img src="img/4.jpg" alt="image">
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-lg-12 collection__description">
 						<a href="#" class="collection__description-link"> לקטלוג המלא<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="17" viewBox="0 0 9 17"><defs><path id="scl3a" d="M248.06 2303.33l7.27-8.31 1.54 1.75-5.82 6.65 5.94 6.78-1.57 1.8-7.43-8.5.1-.12z"/></defs><g><g transform="translate(-248 -2295)"><use xlink:href="#scl3a"/></g></g></svg></a>
@@ -196,6 +225,7 @@
 			</section>
 		</div>
 	</main>
+
 
 	<footer class="footer">
 		<div class="container_footer">
@@ -234,8 +264,8 @@
 								</div>
 							</div>
 							<button class="footer__form-btn">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="19" viewBox="0 0 12 19"><defs><path id="nz0aa" d="M1111.85 2728.19l1.9-1.85 9 8.73-.06.05.14.13-9.19 8.92-1.94-1.89 7.34-7.12z"/></defs><g><g transform="translate(-1111 -2726)"><use xlink:href="#nz0aa"/></g></g></svg>
 								<span>Send</span>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="19" viewBox="0 0 12 19"><defs><path id="nz0aa" d="M1111.85 2728.19l1.9-1.85 9 8.73-.06.05.14.13-9.19 8.92-1.94-1.89 7.34-7.12z"/></defs><g><g transform="translate(-1111 -2726)"><use xlink:href="#nz0aa"/></g></g></svg>
 							</button>
 						</form>
 					</div>
@@ -246,6 +276,6 @@
 	</footer>
 
 	<script src="js/scripts.min.js"></script>
-
+	<script src="libs/OwlCarousel/owl.carousel.min.js"></script>
 </body>
 </html>

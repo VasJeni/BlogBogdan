@@ -1,8 +1,18 @@
 .blog
   &__gallery
     margin-top: -10px
+    &-link
+      position: absolute
+      display: block
+      width: 29px
+      height: 29px
+      bottom: 38px
+      left: 27px
+      svg
+        width: 100%
+        height: auto
     &--item
-      margin: 25px 0
+      margin: 15px 0
       position: relative
       img
         display: block
@@ -12,26 +22,38 @@
         width: 100%
         left: 0
         bottom: -1px
-      &-first:hover .blog__gallery--text
-        visibility: visible
-      &-second:hover .blog__gallery--text
-        visibility: visible
-      &-third:hover .blog__gallery--text
-       visibility: visible
-      &-four:hover .blog__gallery--text
-        visibility: visible
-      &-five:hover .blog__gallery--text
-        visibility: visible
-      &-six:hover .blog__gallery--text
-        visibility: visible
+      &-first, &-second, &-third, &-four, &-five, &-six
+        &:hover
+          .blog__gallery--text
+            visibility: visible
+            opacity: 1
+      //&-first:hover .blog__gallery--text
+      //  visibility: visible
+      //&-second:hover .blog__gallery--text
+      //  visibility: visible
+      //&-third:hover .blog__gallery--text
+      // visibility: visible
+      //&-four:hover .blog__gallery--text
+      //  visibility: visible
+      //&-five:hover .blog__gallery--text
+      //  visibility: visible
+      //&-six:hover .blog__gallery--text
+      //  visibility: visible
     &--text
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      transition: .2s ease-in-out
+      opacity: 0
       position: absolute
       left: 15px
       top: 0
       color: #FFFFFF
       background-color: rgba(0, 0, 0, 0.46)
       width: calc(100% - 30px)
-      height: calc(100% - 1px)
+      height: 100%
       //transform: translateX(-50%)
       margin-top: 0
       visibility: hidden
@@ -40,20 +62,35 @@
       &:hover,
       &:active
         outline: none
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+        display: block
+        height: 17px
+        background: #fff568
       h3
         font-family: "Assistant"
         font-weight: 600
         width: 50%
         text-align: center
-        margin: 15% auto 0 auto
+        margin: 0
         font-size: 26px
+        color: #FFFFFF
       p
         font-family: "Assistant"
         font-size: 16px
         width: 70%
-        margin: 20px auto
+        margin: 40px 0 0 0
+        color: #FFFFFF
+        @media (max-width: 576px)
+          margin: 10px 0 0 0
+          font-size: 12px !important
   &__link
-    font-family: "Helvetica Neue"
+    font-family: "Helvetica"
     font-size: 39px
     font-weight: 500
     margin-top: 33px
@@ -72,3 +109,8 @@
       font-size: 16px
     p
       font-size: 14px
+
+.interior, .styling, .blog, .press
+  .project__link:before
+    @media (max-width: 1440px)
+      bottom: 6px

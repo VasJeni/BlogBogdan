@@ -16,16 +16,23 @@
     position: relative
     margin-left: 7px
     text-decoration: none
+    &:hover
+      &:before
+        //background-color: red
+        @extend .yellow-underline-animations
     &:before
-      content: ''
-      position: absolute
-      bottom: 0
-      left: -7px
-      width: calc(100% + 14px)
-      height: 18px
-      background: $accent
-      z-index: -1
-      transition: .2s ease-in-out
+      //content: ''
+      //position: absolute
+      //bottom: 0
+      //left: -7px
+      //width: calc(100% + 14px)
+      //height: 18px
+      //background: $accent
+      //z-index: -1
+      //transition: .2s ease-in-out
+      @extend .yellow-underline
+      @media (max-width: 1024px)
+        bottom: 4px !important
   .subtitle
     margin-bottom: 35px
     padding: 0 10px
